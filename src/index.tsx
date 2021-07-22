@@ -1,6 +1,7 @@
 export { Form, FormContents, FormControls } from "./components/Form";
 
 export {
+  FormDatePicker,
   FormInput,
   FormTextArea,
   FormInputGroup,

@@ -1,6 +1,7 @@
 import React from "react";
 import { Form } from "../Form";
 import { FormInput, FormSelect, FormTextArea } from ".";
+import { FormDatePicker } from "./FormElements";
 
 export default {
   title: "Form Elements",
@@ -46,6 +47,15 @@ export const formMulti = () => (
         { label: "Input 2", value: "input_2" },
         { label: "Input 3", value: "input_3" },
       ]}
+    />
+  </Form>
+);
+
+export const formDatePicker = () => (
+  <Form onSubmitFn={noop} validationSchema={{}}>
+    <FormDatePicker
+      name="date"
+      label="Date"
     />
   </Form>
 );

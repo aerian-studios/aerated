@@ -1,4 +1,5 @@
 export {
+  FormDatePicker,
   FormInput,
   FormTextArea,
   FormInputGroup,

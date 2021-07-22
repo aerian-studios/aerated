@@ -4,6 +4,7 @@ import cx from "classnames";
 import { ErrorMessage } from "@hookform/error-message";
 
 import ReactSelect from "react-select";
+import ReactDatePicker from "react-datepicker";
 
 import Icon from "../Icons";
 
@@ -419,4 +420,33 @@ export const FormTagSelector: React.FC<TagSelectorProps> = ({
       </div>
     </div>
   );
+};
+
+interface DatePickerProps extends Omit<Props, "defaultValue"> {
+  defaultValue?: Date;
+  showTime?: boolean;
+  label: string;
+  dateFormat?: string;
+  value?: Date,
+}
+
+export const FormDatePicker: React.FC<DatePickerProps> = ({ name, label, defaultValue, className, ...rest }) => {
+  return (
+    <label>
+      <div className={styles.label}>{label}</div>
+      <ControlledElement
+        Component={DatePicker}
+        name={name}
+        label={label}
+        defaultValue={defaultValue || new Date()}
+        {...rest}
+      />
+    </label>
+  )
+};
+
+export const DatePicker: React.FC<DatePickerProps> = ({ showTime = false, onChange, value }) => {
+  return (
+      <ReactDatePicker  selected={value} onChange={onChange} showTimeInput={showTime} />
+  )
 };

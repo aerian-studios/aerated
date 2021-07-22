@@ -1,6 +1,6 @@
 {
   "name": "@aerian/aerian-component-library",
-  "version": "0.7.2",
+  "version": "0.7.4",
   "description": "",
   "repository": "https://github.com/aerian-studios/aerian-component-library.git",
   "scripts": {
@@ -17,6 +17,7 @@
   "dependencies": {
     "@hookform/error-message": "^0.0.2",
     "@hookform/resolvers": "^0.0.5",
+    "react-datepicker": "^4.1.1",
     "react-hook-form": "^6.0.1",
     "react-select": "^3.1.0"
   },
