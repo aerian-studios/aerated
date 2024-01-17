@@ -12,7 +12,7 @@ yarn add @aerian-studios/aerian-component-library@0.0.1
 
 # Form
 
-The `Form` component is an implimentation of `react-hook-form`. 
+The `Form` component is an implementation of `react-hook-form`. 
 The component has 2 required props `onSubmitFn` and `validationSchema`.
 
 - onSubmitFn:

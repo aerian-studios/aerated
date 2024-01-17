@@ -21,7 +21,7 @@
     "react-select": "^3.1.0"
   },
   "devDependencies": {
-    "@babel/core": "^7.10.4",
+    "@babel/core": "^7.23.7",
     "@hookform/error-message": "^0.0.2",
     "@hookform/resolvers": "^0.0.5",
     "@storybook/addon-a11y": "^5.3.19",
@@ -36,14 +36,13 @@
     "babel-loader": "^8.1.0",
     "babel-preset-react-app": "^9.1.2",
     "cssnano": "^4.1.10",
-    "node-sass": "^4.14.1",
     "postcss-import": "^12.0.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-hook-form": "^6.0.1",
     "react-select": "^3.1.0",
     "resolve-url-loader": "^3.1.1",
-    "sass-loader": "^9.0.0",
+    "sass-loader": "^14.0.0",
     "typescript": "^3.9.6",
     "yalc": "^1.0.0-pre.37",
     "yup": "^0.29.1"
